@@ -69,12 +69,14 @@ The Research Prompt Engineer is an expert LLM prompt engineering system designed
 ```
 research-prompt-engineer/
 ├── README.md                           # This file
-├── claude_project_instructions.md      # Claude-specific project setup
+├── instructions.md                     # Unified project instructions for all platforms
 ├── claude_research_template.txt        # Claude prompt template
-├── chatgpt_project_instructions.md     # ChatGPT project setup
 ├── chatgpt_research_template.txt       # ChatGPT prompt template
-├── gemini_gem_instructions.md          # Gemini Gem setup
 ├── gemini_research_template.txt        # Gemini prompt template
+├── research_prompt_refinement_instructions.md  # Self-improvement system instructions
+├── claude_project_instructions.md      # Legacy Claude-specific instructions
+├── chatgpt_project_instructions.md     # Legacy ChatGPT-specific instructions
+├── gemini_gem_instructions.md          # Legacy Gemini-specific instructions
 ├── notes.md                            # Development notes
 └── python-async-apis/                  # API integration tools
 ```
@@ -131,23 +133,32 @@ Delivery of execution guidance including:
 - **Post-execution**: Quality assessment, gap identification, iteration planning
 - **Optimization**: Platform-specific tips and advanced features
 
-## Templates and Instructions
+## Unified Instructions and Templates
 
-### Claude Research Template
+### Unified Instructions (instructions.md)
+- Single, comprehensive instruction set that works across all platforms
+- Platform-specific capability optimization within unified workflow
+- Consistent research problem development methodology
+- Universal quality standards and special considerations
+- Streamlined maintenance and updates
+
+### Model-Specific Templates
+
+**Claude Research Template**
 - XML-structured prompts optimized for Claude's processing
 - Large context window utilization
 - Constitutional AI safety protocols
 - Self-critique and refinement instructions
 - Document analysis integration
 
-### ChatGPT Research Template
+**ChatGPT Research Template**
 - Markdown hierarchical structure
 - Multi-tool orchestration sequences
 - Explicit reasoning step requirements
 - Agent pipeline optimization
 - Role-based instruction clarity
 
-### Gemini Research Template
+**Gemini Research Template**
 - Interactive plan editing workflow
 - Google ecosystem integration
 - Structured section requirements
@@ -203,23 +214,29 @@ Every generated research prompt includes:
 
 ## Getting Started
 
-### For Claude Users
-1. Review `claude_project_instructions.md`
-2. Set up Claude Project with provided instructions
-3. Upload relevant research materials
-4. Engage with the Research Prompt Engineer to develop your research problem
+### Universal Setup Process
+1. **Review `instructions.md`** - The unified instruction set works for all platforms
+2. **Choose Your Platform** - Claude Project, ChatGPT Project, or Gemini Gem
+3. **Set Up Your Environment** - Configure your chosen platform with the unified instructions
+4. **Upload Research Materials** - Add any relevant files to inform prompt development
+5. **Begin Research Problem Development** - Start the systematic workflow to refine your research focus
 
-### For ChatGPT Users
-1. Review `chatgpt_project_instructions.md`
-2. Set up ChatGPT project environment
-3. Configure Deep Research access
-4. Begin research problem development process
+### Platform-Specific Setup Notes
 
-### For Gemini Users
-1. Review `gemini_gem_instructions.md`
-2. Set up Gemini Gem with provided configuration
-3. Enable Deep Research feature
-4. Start with research problem refinement
+**For Claude Projects**
+- Create new Claude Project and add `instructions.md` content
+- Leverage Claude's large context window for extensive document analysis
+- Utilize XML structuring capabilities for complex research plans
+
+**For ChatGPT Projects**
+- Set up ChatGPT Project with `instructions.md` content
+- Configure access to Deep Research tools
+- Enable memory features for cross-session continuity
+
+**For Gemini Gems**
+- Create Gemini Gem using `instructions.md` content
+- Enable Deep Research feature access
+- Configure Google Workspace integration if relevant
 
 ## Advanced Features
 
@@ -242,6 +259,12 @@ Every generated research prompt includes:
 - Bespoke output structure creation
 - Industry-specific formatting
 - Client requirement accommodation
+
+### Self-Improvement System
+- Systematic feedback analysis and pattern recognition
+- Continuous improvement of instructions and templates
+- Quality assurance framework enhancement
+- Performance optimization based on real-world usage
 
 ## Best Practices
 
@@ -282,6 +305,20 @@ Every generated research prompt includes:
 - **ChatGPT**: Use hierarchical markdown for clarity
 - **Gemini**: Implement interactive plan editing workflow
 
+## System Architecture
+
+### Core Components
+- **Unified Instructions**: Single instruction set for all platforms
+- **Model-Specific Templates**: Optimized prompt templates for each AI platform
+- **Self-Refinement System**: Continuous improvement based on feedback and usage patterns
+- **Quality Assurance Framework**: Systematic validation and standards enforcement
+
+### Maintenance and Evolution
+- **Centralized Updates**: Single file maintenance for core functionality
+- **Template Optimization**: Platform-specific template refinement
+- **Feedback Integration**: Systematic incorporation of user feedback
+- **Performance Monitoring**: Continuous assessment of prompt effectiveness
+
 ## Contributing
 
 To contribute to the Research Prompt Engineer:
@@ -300,9 +337,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For questions, issues, or feature requests:
 - Create an issue in the GitHub repository
 - Review the troubleshooting section
-- Check platform-specific documentation
+- Check the unified instructions documentation
 
 ## Changelog
+
+### Version 2.0.0
+- **Unified Instructions**: Single instruction set for all platforms
+- **Self-Improvement System**: Added refinement capabilities
+- **Streamlined Architecture**: Reduced maintenance complexity
+- **Enhanced Platform Optimization**: Improved model-specific capabilities
 
 ### Version 1.0.0
 - Initial release with support for Claude, ChatGPT, and Gemini
